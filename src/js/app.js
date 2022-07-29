@@ -14,3 +14,4 @@ navbarToggler.addEventListener('click', (e)=>{
     navbarToggler.classList.toggle('active')
     body.classList.toggle('hidden')
 })
+

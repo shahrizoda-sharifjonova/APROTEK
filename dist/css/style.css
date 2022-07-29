@@ -367,7 +367,6 @@
 
 .intro {
   border-bottom: 1px solid rgba(174, 174, 192, 0.2);
-  margin-bottom: 100px;
 }
 
 .intro__img {
@@ -509,6 +508,7 @@
           box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   font-family: Montserrat;
+  font-style: normal;
 }
 
 *:focus,
