@@ -6,12 +6,11 @@ functions.isWebp();
 
 // const swiper = new Swiper();
 
-const menu = document.querySelector('.menu');
-const headerList = document.querySelector('.header__list');
+const navbarToggler = document.querySelector('.navbar-toggler');
+const navbarCollapse = document.querySelector('.navbar-collapse');
 const body = document.querySelector('body');
 
-menu.addEventListener('click', (e)=>{
-    menu.classList.toggle('active')
-    headerList.classList.toggle('active')
+navbarToggler.addEventListener('click', (e)=>{
+    navbarToggler.classList.toggle('active')
     body.classList.toggle('hidden')
 })
