@@ -12,14 +12,6 @@ const body = document.querySelector('body');
 
 navbarToggler.addEventListener('click', (e)=>{
     navbarToggler.classList.toggle('active')
+    navbarCollapse.classList.toggle('active')
     body.classList.toggle('hidden')
 })
-
-const accordion = document.querySelectorAll('.accordion-item');
-const accordionCollapse = document.querySelectorAll('.accordion-collapse');
-
-if(accordionCollapse.forEach(element => {
-    
-});){
-    accordion.classList.toggle('active')
-}
