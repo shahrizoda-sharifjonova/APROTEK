@@ -962,6 +962,76 @@
   color: #1e3f50;
 }
 
+.about {
+  background: -o-linear-gradient(176.14deg, #FFD702 29.87%, #FF6F17 83.66%);
+  background: linear-gradient(273.86deg, #FFD702 29.87%, #FF6F17 83.66%);
+  padding: 10px 0;
+}
+
+.about__slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.about .swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.about .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.about .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #FFFFFF;
+  -webkit-box-shadow: inset -1.18px -1.18px 1.54px #FFFFFF, inset 1.18px 1.18px 1.54px rgba(174, 174, 192, 0.4);
+          box-shadow: inset -1.18px -1.18px 1.54px #FFFFFF, inset 1.18px 1.18px 1.54px rgba(174, 174, 192, 0.4);
+  border-radius: 40px;
+  padding: 25px 28px 28px 28px;
+}
+
+.about__subtitle {
+  max-width: 220px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  color: #FF7617;
+  display: block;
+  margin-bottom: 23px !important;
+}
+
+.about__desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  color: #1E3F50;
+  max-width: 220px;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1293,6 +1363,10 @@ input[type=number] {
   .intro__top {
     height: 40px;
   }
+
+  .about .swiper-slide {
+    padding: 25px 20px 20px 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1312,5 +1386,19 @@ input[type=number] {
 
   .disable-sm {
     display: none !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .about__body.container {
+    padding-right: 0 !important;
+  }
+
+  .about .swiper-wrapper {
+    padding-right: 15px;
+  }
+
+  .about .swiper-slide {
+    padding: 25px 28px 28px 28px;
   }
 }
