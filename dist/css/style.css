@@ -1639,6 +1639,11 @@
   margin-bottom: 15px !important;
 }
 
+.terms__p a,
+.terms__subtitle a {
+  color: #FF7617;
+}
+
 * {
   margin: 0;
   padding: 0;
