@@ -1,0 +1,166 @@
+.documents{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(174, 174, 192, 0.2);
+    @include media(768){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        row-gap: 30px;
+    }
+    &__accordion{
+        width: 100%;
+    }
+    .accordion{
+        &-item{
+            background: linear-gradient(180deg, rgba(174, 174, 192, 0.07) 0%, rgba(255, 255, 255, 0.07) 18.75%), #FAFBFF !important;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            box-shadow: 5px 7px 7px rgba(174, 174, 192, 0.15), -5px -10px 10px #FFFFFF !important;
+            border-radius: 40px !important;
+        }
+        &-button{
+            background: none;
+            border: none;
+            box-shadow: none;
+            border-radius: 40px !important;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 66px;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            color: #1E3F50;
+            padding: 30px !important;
+            @include media(1200){
+                font-size: 23px;
+            }
+            @include media(992){
+                font-weight: 600;
+                font-size: 21px;
+                line-height: 21px;
+                column-gap: 20px;
+            }
+            &::after{
+                display: none !important;
+            }
+            svg{
+                transition: 300ms ease;
+                min-width: 40px;
+                width: 40px;
+                transform: rotate(-180deg);
+                @include media(992){
+                    min-width: 25px;
+                    width: 25px;
+                }
+                path{
+                    fill: #1E3F50;
+                    transition: 300ms ease;
+                    width: 100%;
+                }
+            }
+            &.collapsed{
+                color: #FF7617;
+                svg{
+                    transform: rotate(0deg) !important;
+                    @include media(992){
+                        height: 11px;
+                        -webkit-transform: rotate(-90deg)!important;
+                    }
+                    path{
+                        fill: #FF7617;
+                    }
+                }
+            }
+        }
+        &-body{
+            padding: 0 30px 22px 30px !important;
+        }
+    }
+    &__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        @include media(768){
+            flex-direction: column;
+            row-gap: 10px;
+            align-items: flex-start;
+        }
+        &:not(:last-of-type){
+            margin-bottom: 35px;
+        }
+    }
+    &__p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: right;
+        letter-spacing: -0.03em;
+        color: #1E3F50;
+        max-width: 470px;
+        width: 100%;
+        @include media(768){
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: left;
+        }
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        column-gap: 2px;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 28px;
+        letter-spacing: -0.03em;
+        color: #FF7617;
+        text-shadow: -1.18px -1.18px 1.54px #FFFFFF, 0.8px 0.8px 1px rgba(174, 174, 192, 0.25);
+        @include media(768){
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            column-gap: 20px;
+        }
+        &:hover{
+            color: #FF7617;
+        }
+        img{
+            @include media(768){
+                width: 50px;
+            }
+        }
+    }
+    &__texts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    &__info{
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: #1E3F50;
+        @include media(768){
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        a{
+            color: #FF7617;
+        }
+    }
+}
