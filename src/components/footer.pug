@@ -1,2 +1,16 @@
 mixin footer()
     footer.footer
+        .footer__body.container 
+            ul.footer__list 
+                li.footer__li 
+                    a(href="terms.html").footer__link Пользовательское соглашение
+                li.footer__li 
+                    a(href="requi.html").footer__link Реквизиты
+            .footer__medias     
+                a(href="https://googleplay.com").footer__media
+                    img(src="@img/googleplay.svg", alt="")
+                a(href="https://appstore.com").footer__media
+                    img(src="@img/appstore.svg", alt="")
+                a(href="https://appgallery.com").footer__media
+                    img(src="@img/appgallery.svg", alt="")
+            p.footer__p © ГП Апротек 2022
