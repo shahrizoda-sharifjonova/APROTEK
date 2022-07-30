@@ -1,0 +1,22 @@
+.adventages{
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        margin-bottom: 28px;
+    }
+    .accordion{
+        &-item{
+            background: linear-gradient(180deg, rgba(174, 174, 192, 0.07) 0%, rgba(255, 255, 255, 0.07) 18.75%), #FAFBFF !important;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            box-shadow: 5px 7px 7px rgba(174, 174, 192, 0.15), -5px -10px 10px #FFFFFF !important;
+            border-radius: 40px !important;
+        }
+        &-button{
+            background: none;
+            border: none;
+            box-shadow: none;
+            border-radius: 40px !important;
+        }
+    }
+}
