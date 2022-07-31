@@ -1,20 +1,31 @@
 mixin popups()
     .popups 
-        .popups__body.container 
+        .popups__item
+            button(type="button" data-target="idea").popups__btn.open-popup Идейные соображения 
             button(type="button" data-target="offer").popups__btn.open-popup Предложения
-            doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
-        link(rel="stylesheet", href="css/style.min.css")
-        title Document
-    body 
-        .wrapper 
-            include components/popups 
-            +popups
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        script(src="js/app.min.js")
+            button(type="button" data-target="enterPhoneNumber").popups__btn.open-popup Указать номер телефона
+            button(type="button" data-target="enterCode").popups__btn.open-popup Введите код 
+            button(type="button" data-target="codeSuccessfully").popups__btn.open-popup Предложение успешно создано!
+            button(type="button" data-target="codeFail").popups__btn.open-popup Где-то произошла ошибка
+        .popups__item
+            button(type="button" data-target="notRegistered").popups__btn.open-popup Не зарегистрирован
+            button(type="button" data-target="entrance").popups__btn.open-popup Вход
+            button(type="button" data-target="entrancePhoneNumber").popups__btn.open-popup Вход: телефон номер
+            button(type="button" data-target="codeSms").popups__btn.open-popup Код из смс
+            button(type="button" data-target="profile").popups__btn.open-popup Профиль
+            button(type="button" data-target="register").popups__btn.open-popup Регистрация
+            button(type="button" data-target="renamePhoneNumber").popups__btn.open-popup Изменить номер телефона
+            button(type="button" data-target="profileAdmin").popups__btn.open-popup Панель администратора
+            button(type="button" data-target="profileOffer").popups__btn.open-popup Мои предложения
+            button(type="button" data-target="smsFail").popups__btn.open-popup Код из смс : ошибка
+            button(type="button" data-target="smsSuccessfully").popups__btn.open-popup Успешно
+
+
+
+
+
+
+
+
+
+

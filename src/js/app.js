@@ -21,15 +21,34 @@ new Swiper(".about__swiper", {
         }
     },
   });
+const popup = document.querySelectorAll('.popup');
+const popupClose = document.querySelectorAll('.popup-close');
+const openPopup = document.querySelectorAll('.open-popup');
+
+openPopup.forEach(btn =>{
+    btn.addEventListener('click', (e)=>{
+        popup.forEach(el=>{
+            el.classList.remove('active')
+        })
+        body.classList.toggle('hidden')
+        const target = btn.getAttribute("data-target")
+        document.querySelector(`#${target}`).classList.add('active')
+    })
+})
+popupClose.forEach(close=>{
+    close.addEventListener('click', (e)=>{
+        body.classList.toggle('hidden')
+        popup.forEach(el => {
+            el.classList.remove('active')
+        });
+    })
+})
 
   
 const navbarToggler = document.querySelector('.navbar-toggler');
-const navbarCollapse = document.querySelector('.navbar-collapse');
 const body = document.querySelector('body');
 
 navbarToggler.addEventListener('click', (e)=>{
     navbarToggler.classList.toggle('active')
-    navbarCollapse.classList.toggle('active')
     body.classList.toggle('hidden')
-})
-
+})  
