@@ -13,5 +13,8 @@
     }
     .socials{
         padding-bottom: 0;
+        &.pt{
+            padding-top: 40px;
+        }
     }
 }

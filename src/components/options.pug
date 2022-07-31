@@ -1,0 +1,105 @@
+mixin options()
+    section.options
+        .options__body.container
+            form(action="").options__wrapper  
+                input(type="text" placeholder="Объём КГ").options__input.first
+                .options__item.first 
+                    .accordion-item#accordionFirst
+                        h2.accordion-header#flush-headingOne
+                            button(type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne").accordion-button.collapsed калькулятор доставки
+                                <svg width="45" height="27" viewBox="0 0 45 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_dd_756_975)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 2.99996C3.30219 3.19056 3 4.2843 3 4.99996C3 5.72641 3.1591 4.9993 13 15C18.7548 20.8483 21.8069 24.8974 22 25C22.2069 25.1098 22.7156 25 23 25C23.2844 25 23.7931 25.1098 24 25C24.1931 24.8974 27.2452 20.8483 33 15C40.2743 7.60754 42.8768 5.2788 43 4.99996C43.1966 4.55481 43.1884 4.41187 43 3.99996C42.6399 3.21265 41.8383 2.8242 41 2.99996C40.6106 3.08154 40.686 3.18908 32 12L23 21L14 12L5 2.99996V2.99996C4.77219 2.95212 5.0086 2.99703 5 2.99996C4.99133 3.00298 4.20421 2.94418 4 2.99996Z" fill=""/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_dd_756_975" x="0.28" y="0.238252" width="44.6645" height="26.6106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dx="0.8" dy="0.8"/>
+                                    <feGaussianBlur stdDeviation="0.5"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_756_975"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dx="-1.18" dy="-1.18"/>
+                                    <feGaussianBlur stdDeviation="0.77"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                                    <feBlend mode="normal" in2="effect1_dropShadow_756_975" result="effect2_dropShadow_756_975"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_756_975" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                </svg>
+                        div(aria-labelledby="flush-headingOne" data-bs-parent="#accordionFirst").accordion-collapse.collapse#flush-collapseOne
+                            .accordion-body
+                                p.options__subtitle Откуда забрать
+                                .adventages__form.df
+                                    input(type="text" placeholder="Адрес") 
+                                    input(type="text" placeholder="Карта")  
+                                .adventages__info 
+                                    p Расстояние
+                                    p 0км
+                .options__item.second 
+                        .accordion-item#accordion2
+                            h2.accordion-header#headingTwo
+                                button(type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo").accordion-button.collapsed Калькуляторы качества и доставки
+                                    <svg width="45" height="27" viewBox="0 0 45 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_dd_756_975)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 2.99996C3.30219 3.19056 3 4.2843 3 4.99996C3 5.72641 3.1591 4.9993 13 15C18.7548 20.8483 21.8069 24.8974 22 25C22.2069 25.1098 22.7156 25 23 25C23.2844 25 23.7931 25.1098 24 25C24.1931 24.8974 27.2452 20.8483 33 15C40.2743 7.60754 42.8768 5.2788 43 4.99996C43.1966 4.55481 43.1884 4.41187 43 3.99996C42.6399 3.21265 41.8383 2.8242 41 2.99996C40.6106 3.08154 40.686 3.18908 32 12L23 21L14 12L5 2.99996V2.99996C4.77219 2.95212 5.0086 2.99703 5 2.99996C4.99133 3.00298 4.20421 2.94418 4 2.99996Z" fill=""/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_dd_756_975" x="0.28" y="0.238252" width="44.6645" height="26.6106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dx="0.8" dy="0.8"/>
+                                        <feGaussianBlur stdDeviation="0.5"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.25 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_756_975"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dx="-1.18" dy="-1.18"/>
+                                        <feGaussianBlur stdDeviation="0.77"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+                                        <feBlend mode="normal" in2="effect1_dropShadow_756_975" result="effect2_dropShadow_756_975"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_756_975" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+                            div(aria-labelledby="headingTwo" data-bs-parent="#accordion2").accordion-collapse.collapse#collapseTwo
+                                .accordion-body
+                                    .options__row
+                                        input(type="text" placeholder="Влажность %").adventages__input
+                                        .adventages__checkboxes 
+                                            label(for="checkbox10").adventages__label Не знаю
+                                            input(type="checkbox" checkbox id="checkbox10").adventages__checkbox
+                                    .options__row
+                                        input(type="text" placeholder="Сорная примесь %").adventages__input
+                                        .adventages__checkboxes 
+                                            label(for="checkbox11").adventages__label Не знаю
+                                            input(type="checkbox" checkbox id="checkbox11").adventages__checkbox
+                                    .options__row
+                                        input(type="text" placeholder="Масличность %").adventages__input
+                                        .adventages__checkboxes 
+                                            label(for="checkbox12").adventages__label Не знаю
+                                            input(type="checkbox" checkbox id="checkbox12").adventages__checkbox 
+                .options__infos
+                    .options__infos-top
+                        .options__info  
+                            p.options__p Цена при базовых показателях качества
+                            span.options__price 0₽
+                        .options__info  
+                            p.options__p Цена при указанных показателях качества
+                            span.options__price 0₽
+                        .options__info  
+                            p.options__p Стоимость доставки
+                            span.options__price 0₽
+                    .options__info.bottom 
+                        b.options__p Итоговая цена
+                        span.options__price 0₽
+                textarea(placeholder="Комментарии к предложению").options__comment
+        .options__bottom.container
+            button(type="submit").options__button Создать предложение
+            p.options__offer Продать дороже?#[br] Остались вопросы?#[br] Свяжитесь с нами!
+            .options__buttons 
+                a(href="tel::8(903)654-80-20").options__button 8 (903) 654-80-20
+                a(href="tel::8(903)654-80-20").options__button Заказать звонок
+            .options__map  
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4321.926028228165!2d65.4366311794736!3d57.20605323482033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43bbe2e6b5abafad%3A0x7e08f9b9a45b88d6!2sKnyazhevo%2C%20Tyumen%2C%20Tyumen%20Oblast%2C%20Russia%2C%20625056!5e0!3m2!1sen!2s!4v1659250608739!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
